@@ -8,6 +8,7 @@ DECLARE
     l_error_message      ax_errors.error_message%TYPE;
 
     l_response           CLOB;
+    l_test varchar2(1000);
     l_body               CLOB;
 
     CURSOR c_get_version
