@@ -10,7 +10,7 @@ DECLARE
     l_response           CLOB;
     l_test varchar2(1000);
     l_body               CLOB;
-
+    
     CURSOR c_get_version
     IS
         SELECT version
@@ -23,6 +23,7 @@ DECLARE
     l_generic_username   ax_sysprm.sys_conf_value%TYPE;
     l_generic_pwd        ax_sysprm.sys_conf_value%TYPE;
 BEGIN
+  — test
     OPEN c_get_version;
 
     FETCH c_get_version INTO l_version;
