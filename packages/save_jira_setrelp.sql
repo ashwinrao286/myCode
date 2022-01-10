@@ -9,8 +9,7 @@ DECLARE
 
     l_response           CLOB;
     l_test varchar2(1000);
-    l_body                  CLOB;
-    
+    l_body               CLOB;    
     CURSOR c_get_version
     IS
         SELECT version
